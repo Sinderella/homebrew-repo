@@ -43,6 +43,7 @@ class Openssh < Formula
   patch do
     url "https://master.dl.sourceforge.net/project/hpnssh/Patches/HPN-SSH%2015v1%208.4p1/openssh-8_4_P1-hpn-KitchenSink-15.1.diff"
     sha256 "addec311972075ea38f3978b7b98c893152937110a91bf8f00a95c369428c44b"
+  end
 
   def install
     ENV.append "CPPFLAGS", "-D__APPLE_SANDBOX_NAMED_EXTERNAL__"
