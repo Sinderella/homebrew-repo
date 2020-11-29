@@ -78,7 +78,7 @@ class Openssh < Formula
   end
 
   test do
-    assert_match "OpenSSH_#{version}-hpn", shell_output("#{bin}/ssh -V 2>&1")
+    assert_match "OpenSSH_#{version}-hpn15v1", shell_output("#{bin}/ssh -V 2>&1")
 
     port = free_port
     fork { exec sbin/"sshd", "-D", "-p", port.to_s }
